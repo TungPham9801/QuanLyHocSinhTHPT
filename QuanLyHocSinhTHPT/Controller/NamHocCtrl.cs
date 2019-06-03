@@ -6,6 +6,7 @@ using QuanLyHocSinhTHPT.Bussiness;
 
 namespace QLHocSinhTHPT.Controller
 {
+    //Nguyễn Thị Linh thực hiện phần này
     public class NamHocCtrl
     {
         NamHocData m_NamHocData = new NamHocData();

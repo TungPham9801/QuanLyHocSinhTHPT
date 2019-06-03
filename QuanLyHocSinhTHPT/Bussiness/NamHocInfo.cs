@@ -5,6 +5,7 @@ using System.Text;
 //Hoàn chỉnh
 namespace QuanLyHocSinhTHPT.Bussiness
 {
+    //Xây dựng đối tượng nĂM HỌC với các thuộc tính sau
     public class NamHocInfo
     {
         public NamHocInfo()

@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 
 namespace QuanLyHocSinhTHPT.DataLayer
 {
+    //Thực hiện truy vấn dữ kiệu từ data base
     public class HocSinhData
     {
         DataService m_HocSinhData = new DataService();
@@ -14,18 +15,18 @@ namespace QuanLyHocSinhTHPT.DataLayer
             m_HocSinhData.Load(cmd);
             return m_HocSinhData;
         }
-
+        //Lấy danh sách học sinh theo lớp
         public DataTable LayDsHocSinhTheoLop(String namHoc, String lop)
         {
             SqlCommand cmd = new SqlCommand("SELECT PL.MaHocSinh, HS.HoTen " +
                                             "FROM HOCSINH HS INNER JOIN PHANLOP PL ON HS.MaHocSinh = PL.MaHocSinh " +
                                             "INNER JOIN LOP L ON L.MaLop = PL.MaLop " +
                                             "WHERE PL.MaLop = @lop AND PL.MaNamHoc = @namHoc");
-            cmd.Parameters.Add("lop", SqlDbType.VarChar).Value      = lop;
-            cmd.Parameters.Add("namHoc", SqlDbType.VarChar).Value   = namHoc;
+            cmd.Parameters.Add("lop", SqlDbType.VarChar).Value      = lop ;
+            cmd.Parameters.Add("namHoc", SqlDbType.VarChar).Value   = namHoc ;
 
-            m_HocSinhData.Load(cmd);
-            return m_HocSinhData;
+            m_HocSinhData.Load(cmd) ;
+            return m_HocSinhData ;
         }
 
         public DataTable LayDsHocSinhTheoLop(String namHoc, String khoiLop, String lop)
