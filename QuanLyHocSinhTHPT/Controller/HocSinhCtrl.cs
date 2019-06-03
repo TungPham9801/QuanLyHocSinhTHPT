@@ -7,6 +7,8 @@ using DevComponents.Editors.DateTimeAdv;
 using QuanLyHocSinhTHPT.DataLayer;
 using QuanLyHocSinhTHPT.Bussiness;
 
+
+//Nguyễn Thị Linh thực hiện phần này
 namespace QuanLyHocSinhTHPT.Controller
 {
     public class HocSinhCtrl

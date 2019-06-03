@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 
 namespace QuanLyHocSinhTHPT.DataLayer
 {
+    //Thực hiện truy vấn dữ kiệu từ data base
     public class HocSinhData
     {
         DataService m_HocSinhData = new DataService();

@@ -6,6 +6,7 @@ namespace QuanLyHocSinhTHPT.DataLayer
 {
     public class NamHocData
     {
+        //Thực hiện truy vấn dữ liệu từ data base
         DataService m_NamHocData = new DataService();
 
         public DataTable LayDsNamHoc()
