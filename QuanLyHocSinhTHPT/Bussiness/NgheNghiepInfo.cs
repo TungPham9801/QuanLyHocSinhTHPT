@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-//Hoàn chỉnh
+//Hồ thị giang nhận bài
 namespace QuanLyHocSinhTHPT.Bussiness
 {
     public class NgheNghiepInfo

@@ -2,6 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 
+///Hồ thị giang nhận bài
 namespace QuanLyHocSinhTHPT.DataLayer
 {
     public class NgheNghiepData
